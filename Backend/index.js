@@ -13,7 +13,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 //routes
-app.use("/routes/userRoutes",userRoutes)
+app.use("/api/v1/user",userRoutes)
 
 app.get('/',(req,res)=>{
     res.send("<h1>Server in running properly</h1>")
